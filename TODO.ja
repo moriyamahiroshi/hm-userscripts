@@ -1,0 +1,7 @@
+* ToDo List for HM userscripts  -*- coding: utf-8 -*- vim: enc=utf-8
+
+** TODO Makefileかそれに類似の何かを書く。
+Userscripts.org用に、GitリポジトリのコミットメッセージをJavaScriptのコメ
+ントにして.user.jsファイルに追加するスクリプト。
+
+** TODO Userscripts.orgですでに公開してゐるスクリプトを移入する。
