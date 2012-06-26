@@ -9,7 +9,7 @@
 // @include         http://www.google.com/search?tbs=sbi:*
 // @include         http://members.jcom.home.ne.jp/ksmiracle/*
 // @include         http://tips.lisp-users.org/common-lisp/*
-// @version         0.9.1
+// @version         0.9.2
 // @author          MORIYAMA Hiroshi <hiroshi@kvd.biglobe.ne.jp>
 // @copyright       © 2012  MORIYAMA Hiroshi
 // @license         GPL
@@ -49,13 +49,13 @@
     var url = s[0], sitename = s[1], type = s[2], separator = s[3];
 
     if (location.href.indexOf(url) == 0) {
-      if (type == HEAD && !(document.title.indexOf(sitename) >= 0)) {
-        document.title = sitename + separator + document.title;
-      }
-      else if (type == TAIL
-               && (document.title.indexOf(sitename)
-                   != (document.title.length - sitename.length))) {
-        document.title += separator + sitename;
+      if (! (document.title.indexOf(sitename) >= 0)) {
+        if (type == HEAD) {
+          document.title = sitename + separator + document.title;
+        }
+        else if (type == TAIL) {
+          document.title += separator + sitename;
+        }
       }
     }
   });
