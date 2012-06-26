@@ -9,7 +9,7 @@
 // @include         http://www.google.com/search?tbs=sbi:*
 // @include         http://members.jcom.home.ne.jp/ksmiracle/*
 // @include         http://tips.lisp-users.org/common-lisp/*
-// @version         0.9.2
+// @version         0.9.3
 // @author          MORIYAMA Hiroshi <hiroshi@kvd.biglobe.ne.jp>
 // @copyright       © 2012  MORIYAMA Hiroshi
 // @license         GPL
@@ -49,7 +49,10 @@
     var url = s[0], sitename = s[1], type = s[2], separator = s[3];
 
     if (location.href.indexOf(url) == 0) {
-      if (! (document.title.indexOf(sitename) >= 0)) {
+      /* 元TITLEにサイト名が既に無いか確認する。
+       * その際空白類の差は無視する。
+       */
+      if (! (document.title.indexOf(sitename.replace(/\s+/g, "")) >= 0)) {
         if (type == HEAD) {
           document.title = sitename + separator + document.title;
         }
