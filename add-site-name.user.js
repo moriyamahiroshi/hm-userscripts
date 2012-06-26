@@ -8,7 +8,8 @@
 // @include         http://www.google.com.tw/search?tbs=sbi:*
 // @include         http://www.google.com/search?tbs=sbi:*
 // @include         http://members.jcom.home.ne.jp/ksmiracle/*
-// @version         0.9.0
+// @include         http://tips.lisp-users.org/common-lisp/*
+// @version         0.9.1
 // @author          MORIYAMA Hiroshi <hiroshi@kvd.biglobe.ne.jp>
 // @copyright       © 2012  MORIYAMA Hiroshi
 // @license         GPL
@@ -41,6 +42,7 @@
     ["http://www.google.com.tw/search?tbs=sbi:", "Google 以圖搜尋", TAIL, " - "],
     ["http://www.google.com/search?tbs=sbi:", "Google Search by Image", TAIL, " - "],
     ["http://members.jcom.home.ne.jp/ksmiracle/", "Love Cream Puff", TAIL, " - "],
+    ["http://tips.lisp-users.org/common-lisp/", "逆引きCommon Lisp", TAIL, " - "],
   ];
 
   Settings.forEach(function(s){
