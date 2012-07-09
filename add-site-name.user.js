@@ -9,7 +9,8 @@
 // @include         http://www.google.com/search?tbs=sbi:*
 // @include         http://members.jcom.home.ne.jp/ksmiracle/*
 // @include         http://tips.lisp-users.org/common-lisp/*
-// @version         0.9.3
+// @include         http://suika.fam.cx/~wakaba/wiki/*
+// @version         0.9.4
 // @author          MORIYAMA Hiroshi <hiroshi@kvd.biglobe.ne.jp>
 // @copyright       © 2012  MORIYAMA Hiroshi
 // @license         GPL
@@ -43,6 +44,7 @@
     ["http://www.google.com/search?tbs=sbi:", "Google Search by Image", TAIL, " - "],
     ["http://members.jcom.home.ne.jp/ksmiracle/", "Love Cream Puff", TAIL, " - "],
     ["http://tips.lisp-users.org/common-lisp/", "逆引きCommon Lisp", TAIL, " - "],
+    ["http://suika.fam.cx/~wakaba/wiki/", "SuikaWiki", TAIL, " - "],
   ];
 
   Settings.forEach(function(s){
